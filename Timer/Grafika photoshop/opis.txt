@@ -1,0 +1,10 @@
+This stopwatch and timer tool privides the following features:
+
+-Works in the background
+-Works under the lockscreen
+-Works when you exit the application or even when you turn off the phone
+-Disable automatic lock screen function
+-Sound/vibrate timer notifications
+-Multiple countdown timers (unlimited)
+-Absolutely Free
+-No Ads
