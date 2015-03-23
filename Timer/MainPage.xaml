@@ -1,4 +1,4 @@
-﻿<phone:PhoneApplicationPage
+﻿<phone:PhoneApplicationPage xmlns:WindowsPhone81="clr-namespace:Microsoft.AdMediator.WindowsPhone8;assembly=Microsoft.AdMediator.WindowsPhone8"  xmlns:WindowsPhone8="clr-namespace:Microsoft.AdMediator.WindowsPhone8;assembly=Microsoft.AdMediator.WindowsPhone8"  xmlns:UI="clr-namespace:Microsoft.Advertising.Mobile.UI;assembly=Microsoft.Advertising.Mobile.UI" 
     x:Class="Timer.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -171,6 +171,7 @@
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
                     <Grid Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" >
                         <Grid.ColumnDefinitions>
@@ -217,6 +218,12 @@
                             </DataTemplate>
                         </phone:LongListSelector.ItemTemplate>
                     </phone:LongListSelector>
+                    <!--<adduplex:AdControl Grid.Row="4"  AdUnitId="141039" AppKey="4c200157-9d15-49cf-be16-06c3661021c1" />-->
+                    <!--<UI:AdControl Grid.Row="4" ApplicationId="b0bb0479-ee9a-48ea-8736-c03a62b4b15f" AdUnitId="11387247"  Height="80" Width="480" />-->
+                    <WindowsPhone81:AdMediatorControl Grid.Row="4" x:Name="AdMediatorStopwatch" Height="80"
+                                    Id="FIRST23423423f"
+                                    Width="480"/>
+                    
                 </Grid>
             </phone:PivotItem>
             <phone:PivotItem Header="Timer">
@@ -224,6 +231,7 @@
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
                     <Grid Grid.Row="0" >
                         <Grid.ColumnDefinitions>
@@ -268,6 +276,10 @@
                             </DataTemplate>
                         </phone:LongListSelector.ItemTemplate>
                     </phone:LongListSelector>
+                    <!--<adduplex:AdControl Grid.Row="2"  AdUnitId="141039" AppKey="4c200157-9d15-49cf-be16-06c3661021c1" />-->
+                    <WindowsPhone81:AdMediatorControl Grid.Row="2" x:Name="AdMediatorTimer" Height="80"
+                                    Id="SEC3453453453S"
+                                    Width="480"/>
                 </Grid>
             </phone:PivotItem>
         </phone:Pivot>
